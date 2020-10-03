@@ -5,7 +5,9 @@
 % Speedup options
 useFastRestart = true;
 useGPU = true;
-useParallel = true;
+if(~exist('useParallel'))
+    useParallel = true;
+end
 
 % Create the observation info
 numObs = 31;
